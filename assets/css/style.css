@@ -86,6 +86,19 @@ h2 {
   margin: 0px 10px 10px 20px;
 }
 
+.port-text {
+  position: absolute;
+  background-color: #4aaaa5;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  text-align: center;
+  margin: 10px 25px;
+  padding: 20px 0px;
+  bottom: 35px;
+}
+
+
 p {
   width: 620px;
   padding-bottom: 10px;
@@ -94,22 +107,15 @@ p {
   color: #777777;
 }
 
-.portfolio {
-  display: inline-block;
-  width: 400px;
-  margin:30px;
-  padding: 10px;
+.item{
+  width: 50%;
+  float: left;
+  position: relative;
 }
 
-.portlay {
-  width: 236px;
-  height: 176px;
+.portfolio {
+  margin: 25px;
 }
- 
- img {
-  float: left;
-  padding: 5px;
- }
 
 
 h3 {
@@ -128,10 +134,16 @@ h3 {
   
 }
 
-.clearfix{
+.clearfix-main{
   clear: both;
   content: "";
   display: block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .footer {
